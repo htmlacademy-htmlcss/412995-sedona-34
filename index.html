@@ -9,38 +9,42 @@
 <!-- Header -->
 
     <header class="main__header">
-      <nav>
+      <nav class="navigation">
         <img src="image/logo.svg" width="139" height="100" alt="Логотип компании">
         <ul class="main__nav">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">О седоне</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a class="navigation__item" href="#">Главная</a></li>
+          <li><a class="navigation__item" href="#">О седоне</a></li>
+          <li><a class="navigation__item" href="#">Гостиницы</a></li>
         </ul>
         <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><button class="button button__nav" id="button__nav">ХОЧУ СЮДА!</button></li>
+          <li><a class="navigation__item" href="#"><img src="image/search.svg" width="18,05" height="18,01" alt="search"></a></li>
+          <li><a class="navigation__item" href="#"><img src="image/favorite.svg" width="18,05" height="17" alt="favorite"></a></li>
+          <li>
+            <button class="button button__nav" id="button__nav">
+                <span class="visually__hidden">Хочу сюда!</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
     
     <!-- Main -->
 
-    <main>
+    <main class="index__main"> 
 
       <!-- Hero -->
 
-      <div class="index__hero">
+      <section class="index__hero">
         <img class="hero__background" src="image/index-background.jpg" width="1200" height="485" alt="SEDONA">
         <img class="hero__welcome" src="image/welcome.svg" width="485" height="352" alt="welcome">
         <img class="hero__divider" src="image/divider.png" width="1200" height="57" alt="drivder">
         <h1 class="hero__h1">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="hero__p"></p>
-      </div>
+      </section>
 
       <!-- Advantages -->
 
-      <div class="index__advantages">
+      <section class="index__advantages">
         <div>
           <h2 class="advantages__h2 white">Настоящий городок</h2>
           <p class="advantages__p white">— №1 —</p>
@@ -87,19 +91,19 @@
           <p class="advantages__p black">— №5 —</p>
           <p class="advantages__p black">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
-      </div>
+      </section>
 
       <!-- Hotel search -->
 
-      <div class="index__hotel__search">
+      <section class="index__hotel__search">
         <h1 class="hotel__search__h1">Заинтересовались?</h1>
         <p class="hotel__search__p">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button button__search" id="button__search">Поиск гостиницы в седоне</button>
-      </div>
+      </section>
 
       <!-- Subscribe -->
 
-      <div class="index__subscribe">
+      <section class="index__subscribe">
         <img class="subscribe__background" src="image/subscribe_background.jpg" width="1200" height="411" alt="subscribe__background">
         <h1 class="hotel__search__h1">Заинтересовались?</h1>
         <p class="hotel__search__p">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -107,7 +111,7 @@
           <input type="email" name="email" id="email" alt="Ваш email" placeholder="Ваш email">
           <button class="button button__subscribe" id="button__subscribe">Пописаться</button>
         </div>
-      </div>
+      </section>
 
     </main>
 
