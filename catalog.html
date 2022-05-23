@@ -1,104 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-<!-- Header -->
+    <!-- Header -->
 
     <header class="main__header">
-        <nav class="navigation">
-            <img src="image/logo.svg" width="139" height="100" alt="Логотип компании">
-            <ul class="main__nav">
-                <li><a class="navigation__item" href="#">Главная</a></li>
-                <li><a class="navigation__item" href="#">О седоне</a></li>
-                <li><a class="navigation__item" href="#">Гостиницы</a></li>
-            </ul>
-            <ul>
-                <li><a class="navigation__item" href="#"><img src="image/search.svg" width="18,05" height="18,01" alt="search"></a></li>
-                <li><a class="navigation__item" href="#"><img src="image/favorite.svg" width="18,05" height="17" alt="favorite"></a></li>
-                <li>
-                    <button class="button button__nav" id="button__nav">
-                        <span class="visually__hidden">Хочу сюда!</span>
-                    </button>
-                </li>
-            </ul>
-        </nav>
-    </header> 
-  
-  <!-- Main -->
+      <nav class="navigation">
+        <img
+          src="image/logo.svg"
+          width="139"
+          height="100"
+          alt="Логотип компании"
+        />
+        <ul class="main__nav">
+          <li><a class="navigation__item" href="#">Главная</a></li>
+          <li><a class="navigation__item" href="#">О седоне</a></li>
+          <li><a class="navigation__item" href="#">Гостиницы</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a class="navigation__user" href="#">
+              <span class="visually__hidden">Поиск</span>
+            </a>
+          </li>
+          <li>
+            <a class="navigation__user" href="#">
+              <span class="visually__hidden">Избранное</span>
+            </a>
+          </li>
+          <li>
+            <button class="button button__nav" id="button__nav">
+              Хочу сюда!
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="catalog__main">
+    <!-- Main -->
 
-    <!-- Filter -->
+    <main class="catalog__main">
+      <!-- Filter -->
 
-    <section class="catalog__filter">
+      <section class="catalog__filter">
         <div class="filter__header">
-            <h1  class="filter__h1">Гостиницы Седоны</h1>
+          <h1 class="filter__h1">Гостиницы Седоны</h1>
+            <ul class="breadcrumb">
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Гостиницы</a>
+              </li>
+            </ul>
+        </div>
+        <div class="filter">
+            <fieldset>
+              <legend>Инфраструктура</legend>
+              <input type="checkbox" id="pool" name="pool" tabindex="1" checked/>
+              <label for="pool">Бассейн</label>
+              <input type="checkbox" id="parking" name="parking" tabindex="2" checked/>
+              <label for="parking">Парковка</label>
+              <input type="checkbox" id="WI-FI" name="WI-FI" tabindex="3"/>
+              <label for="WI-FI">WI-FI</label>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья</legend>
+              <input type="radio" id="hotel" name="hotel" tabindex="4" checked />
+              <label for="hotel">Гостиница</label>
+              <input type="radio" id="motel" name="motel" tabindex="5"/>
+              <label for="motel">Мотель</label>
+              <input type="radio" id="apartments" name="apartments" tabindex="6"/>
+              <label for="apartments">Апартаменты</label>
+            </fieldset>
+            <fieldset>
+              <legend>Стоимость,₽:</legend>
+              <input type="number" name="min__number" min = “0” max = “8999” step = “1” placeholder="0                 от" tabindex="7">
+              <input type="number" name="max__number" min = “1” max = “9000” step = “1” placeholder="9000               до" tabindex="8">
+              <input type="range" id="price" name="price" min="1" step="1" max="9000" tabindex="9">
+            </fieldset>
             <div>
-                <img src="image/Union.svg" alt="Union" width="12" height="11,7">
-                <img src="image/Vector.svg" alt="Vector" width="5,11" height="7,95">
-                <p class="filter__p">Гостиницы</p>
+              <button class="button button__filter__done">Применить</button>
+              <button class="button button__filter__reset">Сбросить</button>
             </div>
         </div>
-        <div>
-            <table>
-                <tr>
-                    <td><h3>Инфраструктура</h3></td>
-                    <td><h3>Тип жилья</h3></td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="pool" name="pool" checked>
-                        <label for="pool">Бассейн</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="hotel" name="hotel" checked>
-                        <label for="hotel">Гостиница</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="parking" name="parking" checked>
-                        <label for="parking">Парковка</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="motel" name="motel">
-                        <label for="motel">Мотель</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="WI-FI" name="WI-FI">
-                        <label for="WI-FI">WI-FI</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="apartments" name="apartments">
-                        <label for="apartments">Апартаменты</label>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        
-    </section>
+      </section>
 
+      <!--  -->
+
+    <!-- Subscribe -->
+
+    <section class="index__subscribe">
+      <h2 class="visually__hidden">Подпишись</h2>
+      <h3 class="hotel__search__h3">Подпишитесь на рассылку</h3>
+      <p class="hotel__search__p">
+        Только полезная информация и никакого спама, честное бойскаутское!
+      </p>
+      <div class="subscribe__email">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          alt="Ваш email"
+          placeholder="Ваш email"
+        />
+        <button class="button button__subscribe" id="button__subscribe">
+          Пописаться
+        </button>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
 
-  <footer class="index__footer">
-    <ul class="main__footer">
-      <li><a href="https://vk.com/htmlacademy"><img src="image/VK.svg" width="24" height="14" alt="VK"></a></li>
-      <li><a href="https://t.me/htmlacademy"><img src="image/Telegram.svg" width="18" height="15.1" alt="Telegram"></a></li>
-      <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="image/Youtube.svg" width="22" height="17" alt="Youtube"></a></li>
-    </ul>
-    <a class="footer__tel" href="tel: +7 (812) 812-12-12">+7 (812) 812-12-12</a>
-    <a class="footer__htmlacademy" href="https://htmlacademy.ru/"><img src="image/HTML Academy.svg" width="114,9" height="43,9" alt="htmlacademy"></a>
-  </footer>
+    <!-- Footer -->
 
-
-    
-</body>
+    <footer class="index__footer">
+      <ul class="main__footer">
+        <li>
+          <a href="https://vk.com/htmlacademy">
+            <span class="visually__hidden">В Контакте</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://t.me/htmlacademy">
+            <span class="visually__hidden">Telegram</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually__hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__tel" href="tel:+78128121212">
+        +7 (812) 812-12-12
+      </a>
+      <a class="footer__htmlacademy" href="https://htmlacademy.ru/">
+        <span class="visually__hidden">HTML Academy</span>
+      </a>
+    </footer>
+  </body>
 </html>
