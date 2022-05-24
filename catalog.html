@@ -16,9 +16,9 @@
           alt="Логотип компании"
         />
         <ul class="main__nav">
-          <li><a class="navigation__item" href="#">Главная</a></li>
-          <li><a class="navigation__item" href="#">О седоне</a></li>
-          <li><a class="navigation__item" href="#">Гостиницы</a></li>
+          <li><a class="navigation__item" href="index.html">Главная</a></li>
+          <li><a class="navigation__item" href="/index.html#sedona">О седоне</a></li>
+          <li><a class="navigation__item" href="catalog.html">Гостиницы</a></li>
         </ul>
         <ul>
           <li>
@@ -77,19 +77,97 @@
               <label for="apartments">Апартаменты</label>
             </fieldset>
             <fieldset>
-              <legend>Стоимость,₽:</legend>
+              <legend>Стоимость, ₽:</legend>
               <input type="number" name="min__number" min = “0” max = “8999” step = “1” placeholder="0                 от" tabindex="7">
               <input type="number" name="max__number" min = “1” max = “9000” step = “1” placeholder="9000               до" tabindex="8">
               <input type="range" id="price" name="price" min="1" step="1" max="9000" tabindex="9">
             </fieldset>
             <div>
-              <button class="button button__filter__done">Применить</button>
-              <button class="button button__filter__reset">Сбросить</button>
+              <button class="button button__filter__done" id="button__filter__done">Применить</button>
+              <button class="button button__filter__reset" id="button__filter__reset">Сбросить</button>
             </div>
         </div>
       </section>
 
-      <!--  -->
+      <!-- Searching results -->
+
+      <section>
+        <div class="catalog__results__head">
+          <h2 class="catalog__results__h2">Найдено гостиниц: 38</h2>
+          <select name="filter__hotel">
+            <option value="cheap" selected>Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="stars__up">По возрастанию звёзд</option>
+            <option value="stars__down">По убыванию звёзд</option>
+          </select>
+          <div class="streamline">
+            <button class="button button__tile" id="button__tile"></button>
+            <button class="button button__gallery" id="button__gallery"></button>
+            <button class="button button__list" id="button__list"></button>
+          </div>
+        </div>
+        <div class="catalog__results__body">
+          <div class="catalog__product">
+            <img src="image/hotel__1.jpg" alt="hotel__1" class="catalog__result__img">
+            <h3>Amara Resort & Spa</h3>
+            <p>Гостиница</p>
+            <p>от 4000 ₽</p>
+            <button class="more__about__hotel">Подробнее</button>
+            <button class="favorites__about__hotel">Избранное</button>
+            <p>Рейтинг: 8,5</p>
+          </div>
+          <div class="catalog__product">
+            <img src="image/hotel__2.jpg" alt="hotel__2" class="catalog__result__img">
+            <h3>Villas at Poco Diablo</h3>
+            <p>Гостиница</p>
+            <p>от 5000 ₽</p>
+            <button class="more__about__hotel">Подробнее</button>
+            <button class="favorites__about__hotel">Избранное</button>
+            <p>Рейтинг: 9,2</p>
+          </div>
+          <div class="catalog__product">
+            <img src="image/hotel__3.jpg" alt="hotel__3" class="catalog__result__img">
+            <h3>Desert Quail Inn</h3>
+            <p>Гостиница</p>
+            <p>от 2500 ₽</p>
+            <button class="more__about__hotel">Подробнее</button>
+            <button class="favorites__about__hotel">Избранное</button>
+            <p>Рейтинг: 6,9</p>
+          </div>
+          <div class="catalog__product">
+            <img src="image/hotel__4.jpg" alt="hotel__4" class="catalog__result__img">
+            <h3>GreenTree Inn</h3>
+            <p>Гостиница</p>
+            <p>от 1500 ₽</p>
+            <button class="more__about__hotel">Подробнее</button>
+            <button class="favorites__about__hotel">Избранное</button>
+            <p>Рейтинг: 5,0</p>
+          </div>
+        </div>
+        <div class="catalog__results__footer">
+          <div class="paginator">
+            <a class="current" href="#1">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#4">4</a>
+            <span>&hellip;</span>
+            <a href="#10">10</a>
+          </div>
+          <p>Гостиниц на странице:</p>
+          <select name="filter__hotel">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </section>
 
     <!-- Subscribe -->
 
