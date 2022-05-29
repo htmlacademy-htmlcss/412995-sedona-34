@@ -7,34 +7,27 @@
   <body>
     <!-- Header -->
 
-    <header class="main__header">
+    <header class="header">
       <nav class="navigation">
-        <img
-          src="image/logo.svg"
-          width="139"
-          height="100"
-          alt="Логотип компании"
-        />
-        <ul class="main__nav">
-          <li><a class="navigation__item" href="index.html">Главная</a></li>
-          <li><a class="navigation__item" href="#sedona">О седоне</a></li>
-          <li><a class="navigation__item" href="catalog.html">Гостиницы</a></li>
+        <img src="image/svg/logo.svg" width="139" height="100" alt="Логотип компании"/>
+        <ul class="navigation__nav">
+          <li><a class="navigation__link" href="index.html">Главная</a></li>
+          <li><a class="navigation__link" href="#">О седоне</a></li>
+          <li><a class="navigation__link" href="catalog.html">Гостиницы</a></li>
         </ul>
-        <ul>
+        <ul class="navigation__user">
           <li>
-            <a class="navigation__user" href="#">
-              <span class="visually__hidden">Поиск</span>
+            <a class="navigation__link" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li>
-            <a class="navigation__user" href="#">
-              <span class="visually__hidden">Избранное</span>
+            <a class="navigation__link" href="#">
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li>
-            <button class="button button__nav" id="button__nav">
-              Хочу сюда!
-            </button>
+            <a class="navigation__button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -42,87 +35,54 @@
 
     <!-- Main -->
 
-    <main class="index__main">
+    <main class="main-index">
       <!-- Hero -->
 
-      <section class="index__hero">
-        <h1 class="visually__hidden">Sedona</h1>
-        <h3 class="hero__h3">
+      <section class="main-index__hero">
+        <h1 class="visually-hidden">Sedona</h1>
+        <h3 class="main-index__hero__title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h3>
-        <p class="hero__p"></p>
+        <p class="main-index__hero__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
       <!-- Advantages -->
 
-      <section class="index__advantages">
-        <h2 class="visually__hidden">Преимущества</h2>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
         <div>
-          <h3 class="advantages__h3 white">Настоящий городок</h3>
-          <p class="advantages__p white">— №1 —</p>
+          <h3 class="advantages__title white">Настоящий городок</h3>
+          <p class="advantages__text white">— №1 —</p>
 
           <p class="advantages__p white">
-            <a id="sedona">
+            <a>
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </a>
           </p>
         </div>
         <div>
-          <img
-            class="advantages__img"
-            src="image/photo-1.png"
-            width="800"
-            height="384"
-            alt="photo-1"
-          />
+          <img class="advantages__img" src="image/jpg/photo-1.jpg" width="800" height="384" alt="photo-1"/>
         </div>
         <div>
-          <img
-            class="advantages__svg"
-            src="image/house.svg"
-            alt="House"
-            width="74,7"
-            height="72"
-          />
           <h3 class="advantages__h3 black">Жилье</h3>
           <p class="advantages__p black">
             Рекомендуем пожить в настоящем мотеле, всё как в кино!
           </p>
         </div>
         <div>
-          <img
-            class="advantages__svg"
-            src="image/food.svg"
-            alt="House"
-            width="73,81"
-            height="70"
-          />
           <h3 class="advantages__h3 black">Еда</h3>
           <p class="advantages__p black">
             Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
           </p>
         </div>
         <div>
-          <img
-            class="advantages__svg"
-            src="image/food.svg"
-            alt="House"
-            width="64"
-            height="75,95"
-          />
           <h3 class="advantages__h3 black">Сувениры</h3>
           <p class="advantages__p black">
             Не только китайского, но и настоящего местного производства!
           </p>
         </div>
         <div>
-          <img
-            class="advantages__img"
-            src="image/photo-2.png"
-            width="800"
-            height="384"
-            alt="photo-1"
-          />
+          <img class="advantages__img" src="image/jpg/photo-2.jpg" width="800" height="384" alt="photo-1"/>
         </div>
         <div>
           <h3 class="advantages__h3 white">Там есть мост дьявола</h3>
@@ -156,72 +116,59 @@
 
       <!-- Hotel search -->
 
-      <section class="index__hotel__search">
-        <h2 class="visually__hidden">Поиск отелей</h2>
-        <h3 class="hotel__search__h3">Заинтересовались?</h3>
-        <p class="hotel__search__p">
+      <section class="main-index__hotel-search">
+        <h2 class="visually-hidden">Поиск отелей</h2>
+        <h3 class="main-index__hotel-search__h3">Заинтересовались?</h3>
+        <p class="main-index__hotel-search__p">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <a class="button button__search" href="catalog.html">
+        <a class="main-index__hotel-search__button" href="catalog.html">
           Поиск гостиницы в седоне
         </a>
       </section>
 
       <!-- Subscribe -->
 
-      <section class="index__subscribe">
-        <h2 class="visually__hidden">Подпишись</h2>
-        <h3 class="hotel__search__h3">Подпишитесь на рассылку</h3>
-        <p class="hotel__search__p">
+      <section class="subscribe-catalog index-page">
+        <h2 class="visually-hidden">Подпишись</h2>
+        <h3 class="subscribe-catalog__titel">Подпишитесь на рассылку</h3>
+        <p class="subscribe-catalog__text">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <div class="subscribe__email">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            alt="Ваш email"
-            placeholder="Ваш email"
-          />
-          <button class="button button__subscribe" id="button__subscribe">
-            Пописаться
-          </button>
+        <div class="subscribe-catalog__email">
+          <input class="subscribe-catalog__email__input" type="email" name="email" id="email" alt="Ваш email" placeholder="Ваш email"/>
+          <button class="subscribe-catalog__email__button" type="submit">Подписаться</button>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
 
-    <footer class="index__footer">
-
-      <ul class="main__footer">
-        <li>
+    <footer class="footer">
+      <ul class="footer__item">
+        <li class="footer__link">
           <a href="https://vk.com/htmlacademy">
-            <span class="visually__hidden">В Контакте</span>
+            <span class="visually-hidden">В Контакте</span>
           </a>
         </li>
-        <li>
+        <li class="footer__link">
           <a href="https://t.me/htmlacademy">
-            <span class="visually__hidden">Telegram</span>
+            <span class="visually-hidden">Telegram</span>
           </a>
         </li>
-        <li>
+        <li class="footer__link">
           <a href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually__hidden">Youtube</span>
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <div>
-        <a class="footer__tel" href="tel:+78128121212">
-          +7 (812) 812-12-12
-        </a>
-      </div>
-      <div>
-        <a class="footer__htmlacademy" href="https://htmlacademy.ru/">
-          <span class="visually__hidden">HTML Academy</span>
-        </a>
-      </div>
+      <a  class="footer__link" href="tel:+78128121212">
+        +7 (812) 812-12-12
+      </a>
+      <a  class="footer__link" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
     </footer>
   </body>
 </html>
