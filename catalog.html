@@ -35,148 +35,160 @@
 
     <!-- Main -->
 
-    <main class="main-catalog">
+    <main class="catalog">
       <!-- Filter -->
 
-      <section class="main-catalog">
-        <div class="main-catalog__header">
-          <h1 class="main-catalog__h1">Гостиницы Седоны</h1>
-          <ul class="main-catalog__breadcrumb">
-            <li class="main-catalog__breadcrumb__item">
-              <a class="main-catalog__breadcrumb__link" href="index.html">Главная</a>
+      <section class="catalog__filter">
+        <div class="catalog__header">
+          <h1 class="catalog__h1">Гостиницы Седоны</h1>
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="index.html">Главная</a>
             </li>
-            <li class="main-catalog__breadcrumb__item">
-              <a class="main-catalog__breadcrumb__link">Гостиницы</a>
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link">Гостиницы</a>
             </li>
           </ul>
         </div>
-        <form class="main-catalog__form">
+
+        <form class="search-form" method="post">
             <h2 class="visually-hidden">Список фильтров</h2>
-            <fieldset class="main-catalog__form" method="post">
-              <legend class="main-catalog__title">Инфраструктура:</legend>
-              <input class="main-catalog__input" type="checkbox" id="pool" name="pool" checked/>
-              <label class="main-catalog__title-input" for="pool">Бассейн</label>
-              <input class="main-catalog__input" type="checkbox" id="parking" name="parking" checked/>
-              <label class="main-catalog__title-input" for="parking">Парковка</label>
-              <input class="main-catalog__input" type="checkbox" id="WI-FI" name="WI-FI"/>
-              <label class="main-catalog__title-input" for="WI-FI">WI-FI</label>
+            <fieldset class="search-form-item">
+              <legend class="search-form-item__title">Инфраструктура:</legend>
+              <input class="search-form-item__input" type="checkbox" id="pool" name="pool" checked/>
+              <label class="search-form-item__label" for="pool">Бассейн</label>
+              <input class="search-form-item__input" type="checkbox" id="parking" name="parking" checked/>
+              <label class="search-form-item__label" for="parking">Парковка</label>
+              <input class="search-form-item__input" type="checkbox" id="WI-FI" name="WI-FI"/>
+              <label class="search-form-item__label" for="WI-FI">WI-FI</label>
             </fieldset>
-            <fieldset class="main-catalog__form">
-              <legend class="main-catalog__title">Тип жилья:</legend>
-              <input class="main-catalog__input" type="radio" id="hotel" name="hotel" checked/>
-              <label class="main-catalog__title-input" for="hotel">Гостиница</label>
-              <input class="main-catalog__input" type="radio" id="motel" name="motel"/>
-              <label class="main-catalog__title-input" for="motel">Мотель</label>
-              <input class="main-catalog__input"type="radio" id="apartments" name="apartments"/>
-              <label class="main-catalog__title-input" for="apartments">Апартаменты</label>
+
+            <fieldset class="search-form-item">
+              <legend class="search-form-item__title">Тип жилья:</legend>
+              <input class="search-form-item__input" type="radio" id="hotel" name="hotel" checked/>
+              <label class="search-form-item__label" for="hotel">Гостиница</label>
+              <input class="search-form-item__input" type="radio" id="motel" name="motel"/>
+              <label class="search-form-item__label" for="motel">Мотель</label>
+              <input class="search-form-item__input"type="radio" id="apartments" name="apartments"/>
+              <label class="search-form-item__label" for="apartments">Апартаменты</label>
             </fieldset>
-            <fieldset class="main-catalog__form">
-              <legend class="main-catalog__title">Стоимость,&#32;₽:</legend>
-              <input class="main-catalog__input" type="text" name="price-min" id="price-min" value="0">
-              <label class="main-catalog__title-input" for="price-min">от</label>
-              <input class="main-catalog__input" type="text" name="price-max" id="price-max" value="9000">
-              <label class="main-catalog__title-input" for="price-max">до</label>
-              <input class="main-catalog__input" type="range" name="price" id="price" min="0" max="12000" range="500" value="9000">
+
+            <fieldset class="search-form-item">
+              <legend class="search-form-item__title">Стоимость,&#32;₽:</legend>
+              <input class="search-form-item__input" type="text" name="price-min" id="price-min" value="0">
+              <label class="search-form-item__label" for="price-min">от</label>
+              <input class="search-form-item__input" type="text" name="price-max" id="price-max" value="9000">
+              <label class="search-form-item__label" for="price-max">до</label>
+              <input class="search-form-item__input" type="range" name="price" id="price" min="0" max="12000" range="500" value="9000">
             </fieldset>
-            <div class="main-catalog__button">
-              <button class="main-catalog__button__done" type="submit">Применить</button>
-              <button class="main-catalog__button__reset" type="reset">Сбросить</button>
+
+            <div class="search-form-item-actions">
+              <button class="search-form-item-actions__action search-form-item-actions__action--primary" type="submit">Применить</button>
+              <button class="search-form-item-actions__action" type="reset">Сбросить</button>
             </div>
         </form>
       </section>
 
       <!-- Searching results -->
 
-      <section class="catalog">
-        <div class="catalog-results">
-          <h2 class="catalog-results__title">Найдено гостиниц:&#32;38</h2>
-          <select class="catalog-results__filter" name="filter__hotel">
-            <option class="catalog-results__filter__option" value="cheap" selected>Сначала дешёвые</option>
-            <option class="catalog-results__filter__option" value="expensive">Сначала дорогие</option>
-            <option class="catalog-results__filter__option" value="stars-up">По возрастанию звёзд</option>
-            <option class="catalog-results__filter__option" value="stars-down">По убыванию звёзд</option>
+      <section class="search-results">
+        <div class="search-results-filters">
+          <h2 class="search-results-filters__title">Найдено гостиниц:&#32;38</h2>
+          <select class="search-results-filter" name="filter__hotel">
+            <option class="search-results-filter__option" value="cheap" selected>Сначала дешёвые</option>
+            <option class="search-results-filter__option" value="expensive">Сначала дорогие</option>
+            <option class="search-results-filter__option" value="product__text--stars-up">По возрастанию звёзд</option>
+            <option class="search-results-filter__option" value="product__text--stars-down">По убыванию звёзд</option>
           </select>
-          <div class="catalog-results__streamline">
-            <a class="catalog-results__streamline__link">Значки</a>
-            <a class="catalog-results__streamline__link">Галерея</a>
-            <a class="catalog-results__streamline__link">Список</a>
+
+          <div class="search-results-filter search-results-filter--viewtype">
+            <a class="search-results-filter__link">Значки</a>
+            <a class="search-results-filter__link">Галерея</a>
+            <a class="search-results-filter__link">Список</a>
           </div>
         </div>
-        <div class="catalog__group">
-          <article class="catalog__group__product">
-            <a class="catalog__group__product-link" href="#">
+
+        <div class="search-results__items">
+          <article class="product">
+            <a class="product__link" href="#">
               <img src="image/jpg/hotel-1.jpg" alt="Изображение отеля Amara Resort & Spa">
               <h3>Amara Resort & Spa</h3>
             </a>
-            <p class="catalog__group__product-text">Гостиница</p>
-            <p class="catalog__group__product-text">от&#32;4000 ₽</p>
-            <a class="catalog__group__product-link" href="#">Подробнее</a>
-            <a class="catalog__group__product-link" href="#">Избранное</a>
-            <p class="catalog__group__product-text stars">Рейтинг:&#32;8,5</p>
+            <p class="product__text">Гостиница</p>
+            <p class="product__text">от&#32;4000 ₽</p>
+            <a class="product__link" href="#">Подробнее</a>
+            <a class="product__link" href="#">Избранное</a>
+            <p class="product__text product__text--stars">Рейтинг:&#32;8,5</p>
           </article>
-          <article class="catalog__group__product">
-            <a class="catalog__group__product-link" href="#">
+
+          <article class="product">
+            <a class="product__link" href="#">
               <img src="image/jpg/hotel-2.jpg" alt="Изображение отеля Villas at Poco Diablo">
               <h3>Villas at Poco Diablo</h3>
             </a>
-            <p class="catalog__group__product-text">Гостиница</p>
-            <p class="catalog__group__product-text">от&#32;5000 ₽</p>
-            <a class="catalog__group__product-link" href="#">Подробнее</a>
-            <a class="catalog__group__product-link" href="#">Избранное</a>
-            <p class="catalog__group__product-text stars">Рейтинг:&#32;9,2</p>
+            <p class="product__text">Гостиница</p>
+            <p class="product__text">от&#32;5000 ₽</p>
+            <a class="product__link" href="#">Подробнее</a>
+            <a class="product__link" href="#">Избранное</a>
+            <p class="product__text product__text--stars">Рейтинг:&#32;9,2</p>
           </article>
-          <article class="catalog__group__product">
-            <a class="catalog__group__product-link" href="#">
+
+          <article class="product">
+            <a class="product__link" href="#">
               <img src="image/jpg/hotel-3.jpg" alt="Изображение отеля Desert Quail Inn">
               <h3>Desert Quail Inn</h3>
             </a>
-            <p class="catalog__group__product-text">Гостиница</p>
-            <p class="catalog__group__product-text">от&#32;2500 ₽</p>
-            <a class="catalog__group__product-link" href="#">Подробнее</a>
-            <a class="catalog__group__product-link" href="#">Избранное</a>
-            <p class="catalog__group__product-text stars">Рейтинг:&#32;6,9</p>
+            <p class="product__text">Гостиница</p>
+            <p class="product__text">от&#32;2500 ₽</p>
+            <a class="product__link" href="#">Подробнее</a>
+            <a class="product__link" href="#">Избранное</a>
+            <p class="product__text product__text--stars">Рейтинг:&#32;6,9</p>
           </article>
-          <article class="catalog__group__product">
-            <a class="catalog__group__product-link" href="#">
+
+          <article class="product">
+            <a class="product__link" href="#">
               <img src="image/jpg/hotel-4.jpg" alt="Изображение отеля GreenTree Inn">
               <h3>GreenTree Inn</h3>
             </a>
-            <p class="catalog__group__product-text">Гостиница</p>
-            <p class="catalog__group__product-text">от&#32;1500 ₽</p>
-            <a class="catalog__group__product-link" href="#">Подробнее</a>
-            <a class="catalog__group__product-link" href="#">Избранное</a>
-            <p class="catalog__group__product-text stars">Рейтинг:&#32;5,0</p>
+            <p class="product__text">Гостиница</p>
+            <p class="product__text">от&#32;1500 ₽</p>
+            <a class="product__link" href="#">Подробнее</a>
+            <a class="product__link" href="#">Избранное</a>
+            <p class="product__text product__text--stars">Рейтинг:&#32;5,0</p>
           </article>
         </div>
-        <div class="catalog__footer">
-          <div class="catalog__footer__paginator">
-            <a class="catalog__footer__paginator-link">1</a>
-            <a class="catalog__footer__paginator-link" href="#2">2</a>
-            <a class="catalog__footer__paginator-link" href="#3">3</a>
-            <a class="catalog__footer__paginator-link" href="#4">4</a>
-            <a class="catalog__footer__paginator-link" href="#">&hellip;</a>
-            <a class="catalog__footer__paginator-link" href="#10">10</a>
+
+        <div class="paginator">
+          <div class="paginator-links">
+            <a class="paginator-links__link">1</a>
+            <a class="paginator-links__link" href="#2">2</a>
+            <a class="paginator-links__link" href="#3">3</a>
+            <a class="paginator-links__link" href="#4">4</a>
+            <a class="paginator-links__link" href="#">&hellip;</a>
+            <a class="paginator-links__link" href="#10">10</a>
           </div>
-          <p class="catalog__footer__hostel">Гостиниц на странице:</p>
-          <select class="catalog__footer__select" name="filter__hotel">
-            <option value="4">4</option>
-            <option value="8">8</option>
-            <option value="12">12</option>
-          </select>
+
+          <div class="paginator-option">
+            <p class="paginator-option__text">Гостиниц на странице:</p>
+            <select class="paginator-option__select" name="filter__hotel">
+              <option value="4">4</option>
+              <option value="8">8</option>
+              <option value="12">12</option>
+            </select>
+          </div>
         </div>
       </section>
 
     <!-- Subscribe -->
 
-    <section class="subscribe-catalog catalog-page">
-      <h2 class="visually-hidden">Подпишись</h2>
-      <h3 class="subscribe-catalog__titel">Подпишитесь на рассылку</h3>
-      <p class="subscribe-catalog__text">
+    <section class="subscribe-page subscribe-page--catalog">
+      <h3 class="subscribe-page__title">Подпишитесь на рассылку</h3>
+      <p class="subscribe-page__text">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
-      <div class="subscribe-catalog__email">
-        <input class="subscribe-catalog__email__input" type="email" name="email" id="email" alt="Ваш email" placeholder="Ваш email"/>
-        <button class="subscribe-catalog__email__button" type="submit">Подписаться</button>
+      <div class="subscribe-page-email">
+        <input class="subscribe-page-email__input" type="email" name="email" id="email" alt="Ваш email" placeholder="Ваш email"/>
+        <button class="subscribe-page-email__button" type="submit">Подписаться</button>
       </div>
     </section>
   </main>
@@ -191,6 +203,7 @@
             <span class="visually-hidden">В Контакте</span>
           </a>
         </li>
+
         <li class="footer__link">
           <a href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
