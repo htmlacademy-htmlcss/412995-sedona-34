@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Header */
+
+.header {
+  color: #000;
+  background-color: #fff;
+}
+
+.navigation {
+  display: inline-flex;
+}
+
+.navigation img {
+  padding-left: 70px;
+}
+
+.navigation__nav {
+  list-style-type: none;
+  display: inline-flex;
+  padding: 20px 0 19px 47px;
+  margin: 0;
+}
+
+.navigation__link {
+  display: inline;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 34px 0 0;
+}
+
+.navigation__user {
+  list-style-type: none;
+  display: inline-flex;
+  padding: 20px 70px 19px 0;
+  margin: 0;
+}
+
+.navigation__link--search {
+  background: #fff url(/image/svg/search.svg) no-repeat;
+}
+
+.navigation__link--favorites {
+  background: #fff url(/image/svg/favorite.svg) no-repeat;
+}
+
+.navigation__button {
+  border: 1px solid #756157;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #756157;
+  padding: 9px 15px 8px;
+  text-decoration: none;
+  color: #fff;
+}
