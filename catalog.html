@@ -140,17 +140,25 @@
           <option class="search-results-filter__option" value="stars-down">По убыванию звёзд</option>
         </select>
 
-        <div class="search-results-filter search-results-filter--viewtype">
-          <a class="search-results-filter__link search-results-filter__link--icons">
-            <span class="visually-hidden visually-hidden--display">Значки</span>
-          </a>
-          <a class="search-results-filter__link search-results-filter__link--galery">
-            <span class="visually-hidden visually-hidden--display">Галерея</span>
-          </a>
-          <a class="search-results-filter__link search-results-filter__link--list">
-            <span class="visually-hidden visually-hidden--display">Список</span>
-          </a>
-        </div>
+        <ul class="filter-viewtype">
+          <li class="filter-viewtype__list filter-viewtype__list--active">
+            <a href="#" class="filter-viewtype__link filter-viewtype__link--icons">
+              <span class="visually-hidden visually-hidden--display">Значки</span>
+            </a>
+          </li>
+
+          <li class="filter-viewtype__list">
+            <a href="#" class="filter-viewtype__link filter-viewtype__link--galery">
+              <span class="visually-hidden visually-hidden--display">Галерея</span>
+            </a>
+          </li>
+
+          <li class="filter-viewtype__list">
+            <a href="#" class="filter-viewtype__link filter-viewtype__link--list">
+              <span class="visually-hidden visually-hidden--display">Список</span>
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div class="search-results__items">
@@ -167,7 +175,9 @@
             <a class="product__button product__button--more" href="#">Подробнее</a>
             <a class="product__button product__button--favorites" href="#">Избранное</a>
           </div>
-          <p class="product__rating product__rating--stars">Рейтинг:&#32;8,5</p>
+          <p class="product__rating product__rating--stars4">
+            <span class="product__rating-text">Рейтинг:&#32;8,5</span>
+          </p>
         </article>
 
         <article class="product">
@@ -183,7 +193,9 @@
             <a class="product__button product__button--more" href="#">Подробнее</a>
             <a class="product__button product__button--favorites" href="#">Избранное</a>
           </div>
-          <p class="product__rating product__rating--stars">Рейтинг:&#32;9,2</p>
+          <p class="product__rating product__rating--stars4">
+            <span class="product__rating-text">Рейтинг:&#32;9,2</span>
+          </p>
         </article>
 
         <article class="product">
@@ -199,7 +211,9 @@
             <a class="product__button product__button--more" href="#">Подробнее</a>
             <a class="product__button product__button--favorites" href="#">Избранное</a>
           </div>
-          <p class="product__rating product__rating--stars">Рейтинг:&#32;6,9</p>
+          <p class="product__rating product__rating--stars3">
+            <span class="product__rating-text">Рейтинг:&#32;6,9</span>
+          </p>
         </article>
 
         <article class="product">
@@ -215,13 +229,15 @@
             <a class="product__button product__button--more" href="#">Подробнее</a>
             <a class="product__button product__button--favorites" href="#">Избранное</a>
           </div>
-          <p class="product__rating product__rating--stars">Рейтинг:&#32;5,0</p>
+          <p class="product__rating product__rating--stars2">
+            <span class="product__rating-text">Рейтинг:&#32;5,0</span>
+          </p>
         </article>
       </div>
 
       <div class="paginator">
         <div class="paginator-links">
-          <a class="paginator-links__link">1</a>
+          <a class="paginator-links__link paginator-links__link--active" href="#">1</a>
           <a class="paginator-links__link" href="#2">2</a>
           <a class="paginator-links__link" href="#3">3</a>
           <a class="paginator-links__link" href="#4">4</a>
@@ -243,12 +259,12 @@
     <!-- Subscribe -->
 
     <section class="subscribe subscribe--catalog">
-      <h3 class="title">Подпишитесь на рассылку</h3>
+      <h3 class="title title--subscribe">Подпишитесь на рассылку</h3>
       <p class="text">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <div class="subscribe-email">
-        <input class="subscribe-email__input" type="email" name="email" id="email" placeholder="Ваш email" />
+        <input class="subscribe-email__input subscribe-email__input--catalog" type="email" name="email" id="email" placeholder="Ваш email" />
         <button class="subscribe-email__button" type="submit">Подписаться</button>
       </div>
     </section>
