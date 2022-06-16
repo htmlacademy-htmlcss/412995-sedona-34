@@ -57,6 +57,7 @@ body {
 .navigation__nav {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: ;
   margin: 20px 28px 20px 0;
