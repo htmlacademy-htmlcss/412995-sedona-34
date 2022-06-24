@@ -15,10 +15,12 @@
 }
 
 body {
+  position: relative;
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   background-color:  #e5e5e5;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   color: #000;
   width: 1200px;
 }
@@ -29,7 +31,11 @@ body {
 }
 
 .visually-hidden--display {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* Header */
@@ -37,6 +43,7 @@ body {
 .header {
   color: #000;
   background-color: #fff;
+  z-index: 9;
 }
 
 .navigation {
@@ -47,11 +54,11 @@ body {
 
 .navigation__item {
   display: flex;
+  margin-left: 70px;
 }
 
-.navigation img {
-  padding: 0 49px 0 70px;
-  z-index: 1;
+.navigation__logo {
+  z-index: 3;
 }
 
 .navigation__nav {
@@ -59,7 +66,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: ;
   margin: 20px 28px 20px 0;
 }
 
@@ -130,6 +136,7 @@ body {
 }
 
 .navigation__button {
+  white-space: pre;
   border: 1px solid #756157;
   border-radius: 4px;
   text-transform: uppercase;
@@ -138,6 +145,7 @@ body {
   text-decoration: none;
   color: #fff;
   margin-right: ;
+  cursor: pointer;
 }
 
 .navigation__button:hover {
@@ -156,6 +164,7 @@ body {
   position: relative;
   background: #fff url(../image/jpg/index-background.jpg) no-repeat;
   text-align: center;
+  z-index: 2;
 }
 
 .main-hero__img {
@@ -170,6 +179,7 @@ body {
   position: absolute;
   bottom: -2px;
   left: 0;
+  z-index: 2;
 }
 
 .title {
@@ -330,6 +340,7 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 18px 174px;
+  cursor: pointer;
 }
 
 .hotel-search__button:hover {
@@ -401,6 +412,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
 }
 
 .subscribe-email__button:hover {
@@ -422,6 +434,7 @@ body {
 .footer__item {
   list-style-type: none;
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 81px;
 }
@@ -486,18 +499,18 @@ body {
   margin: 0;
 }
 
-/* breadcrumb */
+/* breadcrumbs */
 
-.breadcrumb {
+.breadcrumbs {
   padding-left: 70px;
 }
 
-.breadcrumb__item {
+.breadcrumbs__item {
   display: inline;
   text-decoration: none;
 }
 
-.breadcrumb__link {
+.breadcrumbs__link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -505,14 +518,16 @@ body {
   text-decoration: none;
 }
 
-.breadcrumb__link--main::after {
+.breadcrumbs__link--main::after {
   content: url(../image/svg/breadcrumb-main.svg);
 }
 
-.breadcrumb__link--hotels::before {
+.breadcrumbs__item:last-child::before {
   content: url(../image/svg/breadcrumb-arrow.svg);
   padding: 0 10px;
+  position: relative;
 }
+
 
 /* search-form */
 
@@ -578,14 +593,15 @@ body {
   line-height: 20px;
   background: none;
   border: 0 none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 160px;
+  height: 48px;
 }
 
 .search-form-item-actions__action--primary {
   background: #82b3d3;
   border: 1px solid #82b3d3;
-  border-radius: 4px;
-  width: 160px;
-  height: 48px;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -595,11 +611,19 @@ body {
   background: #499ed7;
 }
 
+.search-form-item-actions__action--reset:hover {
+  border: 1px solid rgba(224, 224, 224, 0.09);
+  opacity: 99%;
+  background: rgba(224, 224, 224, 0.09);
+}
+
+
 /* Searching results */
 
 .search-results__items {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 18px;
   padding: 66px 70px;
   text-align: center;
 }
@@ -672,12 +696,8 @@ body {
 .product {
   width: 340px;
   min-height: 438px;
-  padding-right: 18px;
 }
 
-.product:nth-child(3) {
-  padding-right: 0;
-}
 
 .product__link {
   font-weight: 700;
@@ -723,6 +743,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
 }
 
 .product__button--more {
@@ -811,7 +832,7 @@ body {
 
 .paginator-links {
   display: inline-flex;
-  margin-top: 30px;
+  margin: 30px 0 30px 73px;
 }
 
 .paginator-links__link {
@@ -846,7 +867,7 @@ body {
 }
 
 .paginator__option {
-  margin-top: 30px;
+  margin: 30px 72px 30px 0;
   display: inline-flex;
 }
 
