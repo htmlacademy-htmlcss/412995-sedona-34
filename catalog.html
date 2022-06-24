@@ -15,7 +15,7 @@
   <header class="header">
     <nav class="navigation">
       <div class="navigation__item">
-        <img src="image/svg/logo.svg" width="139" height="70" alt="Логотип компании" />
+        <img class="navigation__logo" src="image/svg/logo.svg" width="139" height="70" alt="Логотип компании" />
         <ul class="navigation__nav">
           <li><a class="navigation__link" href="index.html">Главная</a></li>
           <li><a class="navigation__link" href="#">О седоне</a></li>
@@ -26,6 +26,7 @@
       <ul class="navigation__user">
         <li>
           <a class="navigation__icon navigation__icon--search" href="#">
+
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
@@ -51,14 +52,14 @@
     <section class="catalog__filter">
       <div class="catalog__header">
         <h1 class="catalog__title">Гостиницы Седоны</h1>
-        <ul class="breadcrumb">
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link breadcrumb__link--main" href="index.html">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--main" href="index.html">
               <span class="visually-hidden visually-hidden--display">Главная</span>
             </a>
           </li>
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link breadcrumb__link--hotels" href="catalog.html">Гостиницы</a>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--hotels" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </div>
@@ -122,7 +123,7 @@
           <div class="search-form-item-actions">
             <button class="search-form-item-actions__action search-form-item-actions__action--primary"
               type="submit">Применить</button>
-            <button class="search-form-item-actions__action" type="reset">Сбросить</button>
+            <button class="search-form-item-actions__action search-form-item-actions__action--reset" type="reset">Сбросить</button>
           </div>
         </div>
       </form>
