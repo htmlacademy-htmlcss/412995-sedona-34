@@ -18,7 +18,7 @@
         <img class="navigation__logo" src="image/svg/logo.svg" width="139" height="70" alt="Логотип компании" />
         <ul class="navigation__nav">
           <li><a class="navigation__link navigation__link--active" href="index.html">Главная</a></li>
-          <li><a class="navigation__link" href="#">О седоне</a></li>
+          <li><a class="navigation__link" href="#">О Седоне</a></li>
           <li><a class="navigation__link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </div>
@@ -88,9 +88,9 @@
 
       <div class="advantages__item advantages__item--mod1">
         <h3 class="advantages__title1 advantages__title1--mod">
-          <span class="advantages__title-house">Жилье</span>
+          <span class="advantages__title-house">Жильё</span>
         </h3>
-        <p class="advantages__text advantages__text--mod">
+        <p class="advantages__text advantages__text--house">
           Рекомендуем пожить в настоящем мотеле, всё как в кино!
         </p>
       </div>
@@ -99,8 +99,8 @@
         <h3 class="advantages__title1 advantages__title1--mod">
           <span class="advantages__title-food">Еда</span>
         </h3>
-        <p class="advantages__text advantages__text--mod">
-          Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+        <p class="advantages__text advantages__text--food">
+          &nbsp;Всегда заказывайте&nbsp; топовый фирменный бургер, вы не разочаруетесь!
         </p>
       </div>
 
@@ -108,8 +108,9 @@
         <h3 class="advantages__title1 advantages__title1--mod">
           <span class="advantages__title-gift">Сувениры</span>
         </h3>
-        <p class="advantages__text advantages__text--mod">
-          Не только китайского, но и настоящего местного производства!
+        <p class="advantages__text advantages__text--gift">
+          Не только китайского,
+          <br> но и настоящего местного производства!
         </p>
       </div>
 
@@ -155,8 +156,9 @@
       <h2 class="visually-hidden">Поиск отелей</h2>
       <h3 class="title title--search">Заинтересовались?</h3>
       <p class="text text--search">
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-        предложения гостиниц в Седоне
+        Укажите предполагаемые даты поездки,
+        <br>
+        и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a class="hotel-search__button" href="catalog.html">
         Поиск гостиницы в седоне
@@ -171,7 +173,7 @@
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <div class="subscribe-email">
-        <input class="subscribe-email__input" required type="email" name="email" id="email" placeholder="Ваш email" />
+        <input class="subscribe-email__input" required type="email" name="email" id="email" placeholder="Ваш e-mail" />
         <button class="subscribe-email__button" type="submit">Подписаться</button>
       </div>
     </section>
@@ -243,6 +245,178 @@
       </a>
     </div>
   </footer>
+
+  <!-- Modal -->
+
+  <div class="modal modal--close">
+    <div class="modal__container">
+      <button class="modal__close-button">
+        <svg class="modal__close-button-svg" width="13" height="13" viewBox="0 0 13 13" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" />
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal__content">
+        <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+
+          <div class="modal__form-wrap">
+            <label class="modal__label modal__label--arrival" for="arrival">Дата Заезда:</label>
+            <input class="modal__input modal__input--arrival" required type="text" name="modal-arrival"
+              id="modal-arrival" placeholder="Укажите дату" value="27 апреля 2020">
+            <button class="modal__date-button">
+              <svg class="modal__button-svg" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                  <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"
+                    fill="black" />
+                  <path
+                    d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
+                    fill="black" />
+                  <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z"
+                    fill="black" />
+                  <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z"
+                    fill="black" />
+                  <path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z"
+                    fill="black" />
+                  <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
+                    fill="black" />
+                  <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
+                    fill="black" />
+                  <path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z"
+                    fill="black" />
+                  <path
+                    d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z"
+                    fill="black" />
+                  <path
+                    d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z"
+                    fill="black" />
+                  <path
+                    d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z"
+                    fill="black" />
+                </g>
+              </svg>
+              <span class="visually-hidden">Открыть календарь</span>
+            </button>
+            <p class="modal__search-status modal__search-status--incorrect">Мы не можем отправить вас в прошлое.</p>
+          </div>
+
+          <div class="modal__form-wrap">
+            <label class="modal__label modal__label--departure" for="departure">Дата Выезда:</label>
+            <input class="modal__input modal__input--departure" required type="text" name="modal-departure"
+              id="modal-departure" placeholder="Укажите дату" value="1 сентября 2021">
+            <button class="modal__date-button">
+              <svg class="modal__button-svg" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                  <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"
+                    fill="black" />
+                  <path
+                    d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
+                    fill="black" />
+                  <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z"
+                    fill="black" />
+                  <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z"
+                    fill="black" />
+                  <path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z"
+                    fill="black" />
+                  <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
+                    fill="black" />
+                  <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
+                    fill="black" />
+                  <path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z"
+                    fill="black" />
+                  <path
+                    d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z"
+                    fill="black" />
+                  <path
+                    d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z"
+                    fill="black" />
+                  <path
+                    d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z"
+                    fill="black" />
+                </g>
+              </svg>
+              <span class="visually-hidden">Открыть календарь</span>
+            </button>
+            <p class="modal__search-status">На эти даты есть свободные номера. Пока
+              есть.</p>
+          </div>
+
+          <div class="modal__form-numbers">
+            <div class="modal__form-wrap">
+              <label class="modal__label-number modal__label-number__adults" for="adults">Взрослые:</label>
+              <input class="modal__input modal__input--number" required type="number" name="modal-adults"
+                id="modal-adults" value="2">
+              <button class="modal__min-button" type="button">
+                <svg class="modal__button-svg" width="13" height="1" viewBox="0 0 13 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 1L13 1V0L0 0Z" />
+                </svg>
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+              <button class="modal__max-button" type="button">
+                <svg class="modal__button-svg" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                  </g>
+                </svg>
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+
+            <div class="modal__form-wrap">
+              <label class="modal__label-number modal__label-number__children" for="children">Дети:</label>
+              <span class="modal__tooltip">
+                <button class="modal__tooltip-toogle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="modal__tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-label="Важная информация по детям.">
+                    <g clip-path="url(#clip0_39785_729)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9H1L1 3H0L0 9Z" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0H0V1H1V0Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_39785_729">
+                        <rect fill-rule="evenodd" clip-rule="evenodd" width="1" height="9" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <span class="modal__tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
+                  будут с
+                  вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              <input class="modal__input modal__input--number" required type="number" name="modal-children"
+                id="modal-children" value="1">
+              <button class="modal__min-button" type="button">
+                <svg class="modal__button-svg" width="13" height="1" viewBox="0 0 13 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 1L13 1V0L0 0Z" />
+                </svg>
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+              <button class="modal__max-button" type="button">
+                <svg class="modal__button-svg" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                  </g>
+                </svg>
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+          </div>
+          <button class="modal__form-search" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+
+  </div>
+
+  </div>
+
 </body>
 
 </html>

@@ -18,7 +18,7 @@
         <img class="navigation__logo" src="image/svg/logo.svg" width="139" height="70" alt="Логотип компании" />
         <ul class="navigation__nav">
           <li><a class="navigation__link" href="index.html">Главная</a></li>
-          <li><a class="navigation__link" href="#">О седоне</a></li>
+          <li><a class="navigation__link" href="#">О Cедоне</a></li>
           <li><a class="navigation__link navigation__link--active" href="catalog.html">Гостиницы</a></li>
         </ul>
       </div>
@@ -78,7 +78,7 @@
         </ul>
       </div>
 
-      <form class="search-form" method="post">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Список фильтров</h2>
         <div class="search-form__container">
           <fieldset class="search-form-item">
@@ -86,14 +86,16 @@
             <ul class="search-form__list">
               <li class="search-form__line">
                 <label class="search-form-item__label" for="pool">
-                  <input class="search-form-item__input visually-hidden" type="checkbox" id="pool" name="pool" checked />
+                  <input class="search-form-item__input visually-hidden" type="checkbox" id="pool" name="pool"
+                    checked />
                   <span class="search-form-item__control-mark"></span>
                   <span class="search-form-item__control-lable">Бассейн</span>
                 </label>
               </li>
               <li class="search-form__line">
                 <label class="search-form-item__label" for="parking">
-                  <input class="search-form-item__input visually-hidden" type="checkbox" id="parking" name="parking" checked />
+                  <input class="search-form-item__input visually-hidden" type="checkbox" id="parking" name="parking"
+                    checked />
                   <span class="search-form-item__control-mark"></span>
                   <span class="search-form-item__control-lable">Парковка</span>
                 </label>
@@ -109,26 +111,26 @@
           </fieldset>
 
           <fieldset class="search-form-item">
-            <legend class="search-form-item__title">Тип жилья:</legend>
+            <legend class="search-form-item__title">Тип Жилья:</legend>
             <ul class="search-form__list">
               <li class="search-form__line">
                 <label class="search-form-item__label" for="hotel">
                   <input class="search-form-item__input visually-hidden" type="radio" id="hotel" name="hotel" checked />
-                  <span class="search-from-item__control-radio"></span>
+                  <span class="search-form-item__control-radio"></span>
                   <span class="search-form-item__control-lable">Гостиница</span>
                 </label>
               </li>
               <li class="search-form__line">
                 <label class="search-form-item__label" for="motel">
-                  <input class="search-form-item__input visually-hidden" type="radio" id="motel" name="motel" />
-                  <span class="search-from-item__control-radio"></span>
+                  <input class="search-form-item__input visually-hidden" type="radio" id="motel" name="hotel" />
+                  <span class="search-form-item__control-radio"></span>
                   <span class="search-form-item__control-lable">Мотель</span>
                 </label>
               </li>
               <li class="search-form__line">
                 <label class="search-form-item__label" for="apartments">
-                  <input class="search-form-item__input visually-hidden" type="radio" id="apartments" name="apartments" />
-                  <span class="search-from-item__control-radio"></span>
+                  <input class="search-form-item__input visually-hidden" type="radio" id="apartments" name="hotel" />
+                  <span class="search-form-item__control-radio"></span>
                   <span class="search-form-item__control-lable">Апартаменты</span>
                 </label>
               </li>
@@ -137,7 +139,7 @@
         </div>
         <div class="search-form__container">
           <fieldset class="search-form-item">
-            <legend class="search-form-item__title">Стоимость,&#32;₽:</legend>
+            <legend class="search-form-item__title search-form-item__title--price">Стоимость,&#32;₽:</legend>
             <div class="search-form__list">
               <div class="search-form__wraper">
                 <div class="search-form__wraper-range">
@@ -152,9 +154,9 @@
                 </div>
               </div>
               <div class="search-form__range">
-                <div class="serch-form__range-bar" style="left:0px; width: 210px">
-                  <button class="range-bar__range-toggle range-bar__range-toggle--min" type="button"></button>
-                  <button class="range-bar__range-toggle range-bar__range-toggle--max" type="button"></button>
+                <div class="search-form__range-bar" style="left:0px; width: 218px">
+                  <button class="search-form__range-bar-toggle search-form__range-bar-toggle--min" type="button"></button>
+                  <button class="search-form__range-bar-toggle search-form__range-bar-toggle--max" type="button"></button>
                 </div>
                 <div class="search-form__range-wraper-inputs"></div>
               </div>
@@ -176,12 +178,14 @@
     <section class="search-results">
       <div class="search-results-filters">
         <h2 class="search-results-filters__title">Найдено гостиниц:&#32;38</h2>
-        <select class="search-results-filter" name="filter__hotel">
-          <option class="search-results-filter__option" value="cheap" selected>Сначала дешёвые</option>
-          <option class="search-results-filter__option" value="expensive">Сначала дорогие</option>
-          <option class="search-results-filter__option" value="stars-up">По возрастанию звёзд</option>
-          <option class="search-results-filter__option" value="stars-down">По убыванию звёзд</option>
-        </select>
+        <div class="search-results__select">
+          <select class="search-results-filter" name="filter__hotel">
+            <option class="search-results-filter__option" value="cheap" selected>Сначала дешёвые</option>
+            <option class="search-results-filter__option" value="expensive">Сначала дорогие</option>
+            <option class="search-results-filter__option" value="stars-up">По возрастанию звёзд</option>
+            <option class="search-results-filter__option" value="stars-down">По убыванию звёзд</option>
+          </select>
+        </div>
 
         <ul class="filter-viewtype">
           <li>
@@ -234,7 +238,7 @@
           </a>
           <div class="product__case">
             <p class="product__text">Гостиница</p>
-            <p class="product__text">от&#32;4000 ₽</p>
+            <p class="product__text">От&#32;4000 ₽</p>
           </div>
           <div class="product__case">
             <a class="product__button product__button--more" href="#">Подробнее</a>
@@ -252,7 +256,7 @@
           </a>
           <div class="product__case">
             <p class="product__text">Гостиница</p>
-            <p class="product__text">от&#32;5000 ₽</p>
+            <p class="product__text">От&#32;5000 ₽</p>
           </div>
           <div class="product__case">
             <a class="product__button product__button--more" href="#">Подробнее</a>
@@ -270,7 +274,7 @@
           </a>
           <div class="product__case">
             <p class="product__text">Гостиница</p>
-            <p class="product__text">от&#32;2500 ₽</p>
+            <p class="product__text">От&#32;2500 ₽</p>
           </div>
           <div class="product__case">
             <a class="product__button product__button--more" href="#">Подробнее</a>
@@ -288,7 +292,7 @@
           </a>
           <div class="product__case">
             <p class="product__text">Гостиница</p>
-            <p class="product__text">от&#32;1500 ₽</p>
+            <p class="product__text">От&#32;1500 ₽</p>
           </div>
           <div class="product__case">
             <a class="product__button product__button--more" href="#">Подробнее</a>
@@ -312,11 +316,13 @@
 
         <div class="paginator__option">
           <p class="paginator__text">Гостиниц на странице:</p>
-          <select class="paginator__select" name="filter__hotel">
-            <option value="4">4</option>
-            <option value="8">8</option>
-            <option value="12">12</option>
-          </select>
+          <div class="paginator__select-control">
+            <select class="paginator__select" name="filter__hotel">
+              <option value="4">4</option>
+              <option value="8">8</option>
+              <option value="12">12</option>
+            </select>
+          </div>
         </div>
       </div>
     </section>
@@ -325,12 +331,12 @@
 
     <section class="subscribe subscribe--catalog">
       <h3 class="title title--subscribe">Подпишитесь на рассылку</h3>
-      <p class="text">
+      <p class="text text--subscribe">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <div class="subscribe-email">
         <input class="subscribe-email__input subscribe-email__input--catalog" required type="email" name="email"
-          id="email" placeholder="Ваш email" />
+          id="email" placeholder="Ваш e-mail" />
         <button class="subscribe-email__button" type="submit">Подписаться</button>
       </div>
     </section>
