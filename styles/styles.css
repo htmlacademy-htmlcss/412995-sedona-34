@@ -264,7 +264,6 @@ body {
 .text {
   font-family: inherit;
   align-items: center;
-  width: 400;
   font-size: 22px;
   line-height: 26px;
   vertical-align: middle;
@@ -323,7 +322,6 @@ body {
 .advantages__title,
 .advantages__title1 {
   align-items: center;
-  width: 700;
   font-family: inherit;
   font-size: 24px;
   line-height: 28px;
@@ -335,7 +333,6 @@ body {
 
 .advantages__counter {
   align-items: center;
-  width: 400;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -347,7 +344,6 @@ body {
 
 .advantages__text {
   font-family: inherit;
-  width: 400;
   font-size: 18px;
   line-height: 21px;
   color: var(--FonWh);
